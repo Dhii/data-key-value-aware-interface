@@ -1,5 +1,5 @@
 {
-    "name": "dhii/data-value-object-interface",
+    "name": "dhii/data-key-value-aware-interface",
     "description": "An interface for value objects",
     "type": "library",
     "license": "MIT",
