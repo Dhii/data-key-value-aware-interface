@@ -5,14 +5,14 @@ namespace Dhii\Data;
 /**
  * Something that can represent or have a value.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ValueAwareInterface
 {
     /**
      * Retrieves the value that this object represents.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return mixed The value that this object represents.
      */
