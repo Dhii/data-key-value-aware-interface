@@ -9,6 +9,8 @@ namespace Dhii\Data\FuncTest;
  */
 class ValueAwareInterfaceTest extends \Xpmock\TestCase
 {
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\ValueAwareInterface';
+
     /**
      * Creates a new instance of the test subject.
      *
@@ -18,7 +20,7 @@ class ValueAwareInterfaceTest extends \Xpmock\TestCase
      */
     public function createInstance()
     {
-        $mock = $this->mock('Dhii\\Data\\ValueAwareInterface')
+        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getValue()
             ->new();
 
@@ -34,6 +36,6 @@ class ValueAwareInterfaceTest extends \Xpmock\TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf('Dhii\\Data\\ValueAwareInterface', $subject, 'A valid instance of the test subject could not be created');
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
     }
 }

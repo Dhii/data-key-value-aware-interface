@@ -9,6 +9,8 @@ namespace Dhii\Data\FuncTest;
  */
 class KeyValueAwareInterfaceTest extends \Xpmock\TestCase
 {
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\ValueAwareInterface';
+
     /**
      * Creates a new instance of the test subject.
      *
@@ -18,7 +20,7 @@ class KeyValueAwareInterfaceTest extends \Xpmock\TestCase
      */
     public function createInstance()
     {
-        $mock = $this->mock('Dhii\\Data\\KeyValueAwareInterface')
+        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getKey()
             ->getValue()
             ->new();
@@ -35,6 +37,6 @@ class KeyValueAwareInterfaceTest extends \Xpmock\TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf('Dhii\\Data\\KeyValueAwareInterface', $subject, 'A valid instance of the test subject could not be created');
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
     }
 }
