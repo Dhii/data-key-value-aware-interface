@@ -1,6 +1,6 @@
 {
     "name": "dhii/data-key-value-aware-interface",
-    "description": "An interface for value objects",
+    "description": "Interfaces that aim to increase interoperability of value objects",
     "type": "library",
     "license": "MIT",
     "authors": [
