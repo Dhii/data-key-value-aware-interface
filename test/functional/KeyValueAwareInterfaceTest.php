@@ -5,7 +5,7 @@ namespace Dhii\Data\FuncTest;
 /**
  * Tests {@see \Dhii\Data\KeyValueAwareInterface
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class KeyValueAwareInterfaceTest extends \Xpmock\TestCase
 {
@@ -14,7 +14,7 @@ class KeyValueAwareInterfaceTest extends \Xpmock\TestCase
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return \Dhii\Data\KeyValueAwareInterface A new instance of the test subject.
      */
@@ -31,7 +31,7 @@ class KeyValueAwareInterfaceTest extends \Xpmock\TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {

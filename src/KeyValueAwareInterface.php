@@ -7,7 +7,7 @@ namespace Dhii\Data;
  *
  * An example could be an option, or a collection item, or a mapping.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface KeyValueAwareInterface extends
     KeyAwareInterface,
