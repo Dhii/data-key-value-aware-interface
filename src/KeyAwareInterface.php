@@ -2,6 +2,8 @@
 
 namespace Dhii\Data;
 
+use Dhii\Util\String\StringableInterface as Stringable;
+
 /**
  * Something that can have a key.
  *
@@ -16,7 +18,7 @@ interface KeyAwareInterface
      *
      * @since 0.1
      *
-     * @return string The key that this interface has.
+     * @return string|Stringable|null The key that this interface has.
      */
     public function getKey();
 }
