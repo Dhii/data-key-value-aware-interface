@@ -17,11 +17,23 @@
         "dhii/php-cs-fixer-config": "dev-php-5.3",
         "phpunit/phpunit": "4.*",
         "codeclimate/php-test-reporter": "<=0.3.2",
-        "ptrofimov/xpmock": "^1.1"
+        "ptrofimov/xpmock": "^1.1",
+        "dhii/stringable-interface": "^0.1"
     },
     "autoload": {
         "psr-4": {
             "Dhii\\Data\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Data\\UnitTest\\": "test/unit",
+            "Dhii\\Data\\FuncTest\\": "test/functional"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.2.x-dev"
         }
     }
 }
