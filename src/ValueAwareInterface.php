@@ -10,11 +10,11 @@ namespace Dhii\Data;
 interface ValueAwareInterface
 {
     /**
-     * Retrieves the value that this object represents.
+     * Retrieves the value associated with this instance.
      *
      * @since 0.1
      *
-     * @return mixed The value that this object represents.
+     * @return mixed The value.
      */
     public function getValue();
 }

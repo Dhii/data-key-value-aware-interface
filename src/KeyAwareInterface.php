@@ -14,11 +14,11 @@ use Dhii\Util\String\StringableInterface as Stringable;
 interface KeyAwareInterface
 {
     /**
-     * Retrieve the key of interface.
+     * Retrieve the key associated with this instance.
      *
      * @since 0.1
      *
-     * @return string|Stringable|null The key that this interface has.
+     * @return string|Stringable|null The key.
      */
     public function getKey();
 }
