@@ -3,30 +3,29 @@
 namespace Dhii\Data\FuncTest;
 
 use Xpmock\TestCase;
-use Dhii\Data\KeyValueAwareInterface as TestSubject;
+use Dhii\Data\NameAwareInterface as TestSubject;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
-class KeyValueAwareInterfaceTest extends TestCase
+class NameAwareInterfaceTest extends TestCase
 {
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\ValueAwareInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\NameAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
      * @return TestSubject|MockObject A new instance of the test subject.
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getKey()
-            ->getValue()
+            ->getName()
             ->new();
 
         return $mock;
@@ -35,7 +34,7 @@ class KeyValueAwareInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {

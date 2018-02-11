@@ -14,9 +14,11 @@ Increase interoperability of value objects by depending on this package.
 - [`KeyAwareInterface`] - Exposes a key, which can be a string, [Stringable][`StringableInterface`], or `null`.
 - [`ValueAwareInterface`] - Exposes a value, which can be of any type.
 - [`KeyValueAwareInterface`] - Something that exposes both a key and a value.
+- [`NameAwareInterface`][NameAwareInterface] - Something that is aware of a name, which is a narrow domain identifier.
 
 [`KeyAwareInterface`]:                  src/KeyAwareInterface.php
 [`ValueAwareInterface`]:                src/ValueAwareInterface.php
 [`KeyValueAwareInterface`]:             src/KeyValueAwareInterface.php
+[NameAwareInterface]:                   src/NameAwareInterface.php
 
 [`StringableInterface`]:                https://github.com/Dhii/stringable-interface/blob/develop/src/StringableInterface.php
