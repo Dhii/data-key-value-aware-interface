@@ -2,21 +2,25 @@
 
 namespace Dhii\Data\FuncTest;
 
+use Xpmock\TestCase;
+use Dhii\Data\KeyValueAwareInterface as TestSubject;
+use PHPUnit_Framework_MockObject_MockObject as MockObject;
+
 /**
- * Tests {@see \Dhii\Data\KeyValueAwareInterface
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
-class KeyValueAwareInterfaceTest extends \Xpmock\TestCase
+class KeyValueAwareInterfaceTest extends TestCase
 {
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\ValueAwareInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\ValueAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return \Dhii\Data\KeyValueAwareInterface A new instance of the test subject.
+     * @return TestSubject|MockObject A new instance of the test subject.
      */
     public function createInstance()
     {
